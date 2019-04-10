@@ -1,0 +1,103 @@
+* {
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#main-container {
+    background-color: #feea00;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.2em solid white;
+    border-radius: 0.7em;
+}
+
+#game-title {
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    word-spacing: 0.2em;
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+
+#human-select-box {
+    margin: 1.5em 0;
+    width: 100vw;
+}
+
+.images {
+    cursor: pointer;
+    height: 13em;
+}
+
+.scissors {
+    padding-left: 1.3em;
+}
+
+#computer-play-result {
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    word-spacing: 0.1em;
+    line-height: 0.5em;
+    font-size: 15px;
+}
+
+#computer-result {
+    font-weight: 700;
+}
+
+#game-result {
+    text-transform: uppercase;
+    line-height: 3em;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.player:after {
+    content: "";
+    display: block;
+    width: 2.5em;
+    border-bottom: 0.12em solid black;
+    margin: 0.8em auto;
+}
+
+.player-avatar {
+    height: 14px;
+}
+
+.computer-score {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.computer-avatar {
+    height: 14px;
+}
+
+/* /////////////////////////////  */
+/*    Media Query phone sizes    */
+/* //////////////////////////// */
+@media only screen and (max-width: 450px) {
+
+    #main-container {
+        height: 120vh;
+    }
+
+    #title-box {
+        width: 100%;
+    }
+
+    #game-title {
+        font-size: 1.1em;
+        word-spacing: -0.4em;
+    }
+}
