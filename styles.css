@@ -1,0 +1,132 @@
+* {
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#main-container {
+    background-color: #feea00;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.2em solid white;
+    border-radius: 0.7em;
+}
+
+#game-title {
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    word-spacing: 0.2em;
+    font-weight: lighter;
+    font-size: 1.2em;
+}
+
+#human-select-box {
+    margin: 1.5em 0;
+    width: 100vw;
+}
+
+.images {
+    cursor: pointer;
+    height: 13em;
+}
+
+.images:hover {
+    transform: scale(1.1);
+}
+
+#scissors {
+    padding-left: 1.3em;
+}
+
+#game-board {
+    width: 19em;
+}
+
+#computer-play-result {
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    word-spacing: 0.1em;
+    line-height: 1.1em;
+    font-size: 0.95em;
+}
+
+#computer-result {
+    font-weight: 700;
+}
+
+#game-result {
+    text-transform: uppercase;
+    line-height: 2.5em;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    font-size: 0.9em;
+    margin-top: 0.6em;
+}
+
+.player:after {
+    content: "";
+    display: block;
+    width: 2.5em;
+    border-bottom: 0.12em solid black;
+    margin: 0.5em auto;
+}
+
+.player-avatar {
+    height: 14px;
+}
+
+.computer-avatar {
+    height: 14px;
+}
+
+#reset-icon {
+    width: 20%;
+    margin: 1.1em 0 0 0.2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#reset-icon:hover {
+    transform: rotate(140deg);
+    transform: rotate(140deg);
+}
+
+/* /////////////////////////////  */
+/*    Media Query phone sizes    */
+/* //////////////////////////// */
+@media only screen and (max-width: 450px) {
+
+    #main-container {
+        height: 100vh;
+    }
+
+    #title-box {
+        width: 100%;
+    }
+
+    .images {
+        height: 180px;
+    }
+
+    #paper {
+        padding-top: 1em;
+    }
+
+    #game-title {
+        font-size: 0.9em;
+        word-spacing: -0.3em;
+    }
+
+    #computer-play-result {
+        line-height: 1.1em;
+    }
+}
