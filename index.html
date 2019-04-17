@@ -22,32 +22,38 @@
 
             <!-- rock paper scissors (images) -->
             <div id="human-select-box">
-                <img class="images rock" src="rock.png" alt="rock">
-                <img class="images paper" src="paper.png" alt="paper">
-                <img class="images scissors" src="scissors.png" alt="scissors">
+                <img id="rock" class="images" src="rock.png" alt="rock" title="Rock">
+                <img id="paper" class="images" src="paper.png" alt="paper" title="Paper">
+                <img id="scissors" class="images" src="scissors.png" alt="scissors" title="Scissors">
             </div>
 
             <!-- computer input / results / score board / reset button -->
             <div id="game-board">
-                <p id="computer-play-result">The computer picked <span id="computer-result"><em>paper</em></span></span></p>
-                <p id="game-result">You lose!</p>
+                <p id="computer-play-result">Versus against the <em><strong>AI</strong></em> by selecting the weapon of your choice above.
+                <span id="computer-result"><em></em></span></span></p>
+                <p id="game-result">[ Best of 5 ]</p>
 
                 <div>
-                    <p class="score-board player"><img src="avatar.png" class="player-avatar"> : 0</p>
+                    <p class="score-board player"><img src="avatar.png" class="player-avatar"> : <span id="human-score">Ø</span></p>
 
-                    <p class="score-board computer"><img src="robot.png" class="computer-avatar"> : 0</p>
+                    <p class="score-board computer"><img src="robot.png" class="computer-avatar"> : <span id="robot-score">Ø</span></p>
                 </div>
 
             </div>
 
+            <div>
+                <img id="reset-icon" src="return.png" alt="reset icon" title="Reset Game">
+            </div>
+
     </section>
 
-    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
 
 </body>
 
 <!-- 
-Jomaree Lawsin
+Created by, Jomaree Lawsin
+Images by, https://dribbble.com/shots/2193123-Rock-Paper-Scissors
 The Odin Project 
 Rock Paper Scissors Game
 April 2019 
