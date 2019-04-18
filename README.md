@@ -6,13 +6,9 @@ This was the second stepping stone in the unknown for me. Like literally. The pr
 
 #### Getting Started
 
-<<<<<<< HEAD
 After banging my head and spinning in circles for hours I realized that I wasn't going anywhere and therefore I needed to take a step back and evaluate the task at hand. Instead of trying to solve the entire problem and work on all the functions at once, I focused on creating one function at a time, and it worked out!
 
 //1. Starting from creating the **computerPlay()** function where the computer randomly picks a value from the array and then saved that into a *variable*. Inside the function included the variable *getRandomChoices* that stored the three values of *rock, paper, and scissors* in the array. Below that, was another variable, *getRandomChoices* which produced the confusing logic of grabbing a random number from the array's index by using the function **Math.random()**. Since the **Math.random()** function returns a number between 0 and 1, I needed to round that off so in order to do that I had to store it inside **Math.floor()** function. If you look at *main.js* you will see *computerRandomChoices.length* being multiplied by the two functions I just mentioned, and that's because it is looking at the array's length (index number) and working it's magic by selecting one of the 3 values. In order to make sure everything is working as planned, I had to use the *console.log* function which confirmed that the code block was indeed working as intended! 
-=======
-
->>>>>>> 4d1dfdc2bcd89f8ba1898b2b14afb137ddbc831a
 
 #### Deployment
 
@@ -56,8 +52,4 @@ From The Odin Project's [curriculum](https://www.theodinproject.com/courses/web-
 
 Started the project on **February 17th, 2019**
 Ended the project on **April 17rd, 2019**
-<<<<<<< HEAD
 Hours worked on **24++**
-=======
-Hours worked on **24++**
->>>>>>> 4d1dfdc2bcd89f8ba1898b2b14afb137ddbc831a
