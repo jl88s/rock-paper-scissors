@@ -15,7 +15,7 @@ function computerPlay() {
     return computerRandomChoices[getRandomChoices];
 }
 
-// 3... Make a function that plays a single round of Rock, Paper, Scissors.
+// 2... Make a function that plays a single round of Rock, Paper, Scissors.
 function playRound(playerSelection, computerSelection) {
     console.log(`You selected: "${playerSelection}"`);
     console.log(`Computer selected: "${computerSelection}"`);
@@ -69,7 +69,7 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-//  4... Play a 5 round game that keeps score
+//  3... Play a 5 round game that keeps score
 function game(playerChoice) {
     let player = playerChoice;
     let computer = computerPlay();
@@ -89,7 +89,7 @@ function game(playerChoice) {
     }
 };
 
-//  5.... On click of event listener execute game function after user chooses RPS.
+//  4.... On click of event listener execute game function after user chooses RPS.
 rock.addEventListener('click', () => {
     game("rock");
 });
