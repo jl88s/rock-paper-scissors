@@ -103,7 +103,17 @@ html, body {
 /* /////////////////////////////  */
 /*    Media Query phone sizes    */
 /* //////////////////////////// */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 760px) {
+    .images {
+        height: 9em;
+    }
+
+    #title-box {
+        margin-top: 3em;
+    } 
+}
+
+@media only screen and (max-width: 560px) {
 
     #main-container {
         height: 100vh;
@@ -114,7 +124,7 @@ html, body {
     }
 
     .images {
-        height: 180px;
+        height: 140px;
     }
 
     #paper {
@@ -128,5 +138,35 @@ html, body {
 
     #computer-play-result {
         line-height: 1.1em;
+    }
+
+    @media only screen and (max-width: 375px) {
+        .images {
+            height: 130px;
+        }
+
+        #title-box {
+            margin-top: 1.5em;
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        .images {
+            height: 7em;
+        }
+
+        #title-box {
+            font-size: 0.8em;
+        }
+        
+        #computer-play-result {
+            font-size: 0.75em;
+            margin: 0 4em;
+        }
+
+        #game-result {
+            font-size: 0.6em;
+        }
+        
     }
 }
