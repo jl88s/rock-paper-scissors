@@ -8,7 +8,24 @@ This was the second stepping stone in the unknown for me. Like literally. The pr
 
 After banging my head and spinning in circles for hours I realized that I wasn't going anywhere and therefore I needed to take a step back and evaluate the task at hand. Instead of trying to solve the entire problem and work on all the functions at once, I focused on creating one function at a time, and it worked out!
 
-//1. Starting from creating the **computerPlay()** function where the computer randomly picks a value from the array and then saved that into a *variable*. Inside the function included the variable *getRandomChoices* that stored the three values of *rock, paper, and scissors* in the array. Below that, was another variable, *getRandomChoices* which produced the confusing logic of grabbing a random number from the array's index by using the function **Math.random()**. Since the **Math.random()** function returns a number between 0 and 1, I needed to round that off so in order to do that I had to store it inside **Math.floor()** function. If you look at *main.js* you will see *computerRandomChoices.length* being multiplied by the two functions I just mentioned, and that's because it is looking at the array's length (index number) and working it's magic by selecting one of the 3 values. In order to make sure everything is working as planned, I had to use the *console.log* function which confirmed that the code block was indeed working as intended! 
+**1.** Starting from creating the **computerPlay()** function where the computer randomly picks a value from the array and then saved that into a *variable*. Inside the function included the variable *getRandomChoices* that stored the three values of *rock, paper, and scissors* in the array. Below that, was another variable, *getRandomChoices* which produced the confusing logic of grabbing a random number from the array's index by using the function **Math.random()**. Since the **Math.random()** function returns a number between 0 and 1, I needed to round that off so in order to do that I had to store it inside **Math.floor()** function. If you look at *main.js* you will see *computerRandomChoices.length* being multiplied by the two functions I just mentioned, and that's because it is looking at the array's length (index number) and working it's magic by selecting one of the 3 values. In order to make sure everything is working as planned, I had to use the *console.log* function which confirmed that the code block was indeed working as intended! 
+
+**2.** After making the *function* that selects the Computer’s random choice. It was time to create the logic and algorithm for the actual game. Before diving right in and start writing out all conditions, I took a step back and thought about all the different approach for the game. One of those was using the *Switch* statement where it can consolidate my code into a more structured and neater way of looking at it. Although, It was pretty straight forward, I’d thought since I’m not too comfortable with the *if/else* statement, yet, I mind as well use it this time to get better at it. 
+
+My setup was like this:
+**a.** Create a *function* that has the name of, **playRound** which then took two parameters/arguments  of, **playerSelection** and **computerSelection**. 
+
+**b.** Both the **console.log’s** are there in order for you to see the given result in the **console**, after selection your choice.
+
+**c.** To start the conditional statement I first used  an **if** condition that compared the **playerSeleciton** and **computerSelection** so that it outputs whether both player had *tied*. Inside the code block used to be just an **alert** and/or a **console.log** message giving the outcome of the tie, but after creating the **HTML** and **CSS**, I needed to change them to **document.getElementById()** in order for me to manipulate the *DOM*.
+
+**d.**  Within the main **if statement** there are *three* **else/if statements** that *strictly* compares the **playerSelection** with the given *keywords*: **Rock**, **Paper**, or **Scissors**. Below it, you have a *nested* **if statement** that also strictly compares the result of the **computerSelection** along with the given *keywords*. If the *condition* results to **True**, then the **player** wins and adds a score to the **playerScore** *global* variable by using the **increment operator**; however, **else** if the **computer** wins, then you add a point to the **computerScore** variable.
+
+**e.** 
+
+
+
+
 
 #### Deployment
 
