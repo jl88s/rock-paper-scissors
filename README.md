@@ -21,11 +21,13 @@ My setup was like this:
 
 **d.**  Within the main **if statement** there are *three* **else/if statements** that *strictly* compares the **playerSelection** with the given *keywords*: **Rock**, **Paper**, or **Scissors**. Below it, you have a *nested* **if statement** that also strictly compares the result of the **computerSelection** along with the given *keywords*. If the *condition* results to **True**, then the **player** wins and adds a score to the **playerScore** *global* variable by using the **increment operator**; however, **else** if the **computer** wins, then you add a point to the **computerScore** variable.
 
-**e.** 
+**e.** Inside each *code block* I went again and manipulated the *DOM* by grabbing the *id* from the specific *element* in the *HTML* and used the **document.getElementById()** method to showcase the desired results from the game. I could have used *console.log*, *alert*, etc, but the goal here was to make the main document dynamicly interactive.
 
+**3.** Ok, here's where it gets interesting. I made a function called, **game(*playerChoice*)** that has only *one* parameter of **playerChoice**. This paramenter is then stored inside a **player** variable along with the **computerPlay()** function which is saved inside the **computer** variable. With that in mind. The already created **playRound** function I made previously is then used inside of the **game()** code block passing the parameters of **player** and **computer**. 
 
+What's happening here is that game is being executed atleast once after the *human* player selects his choice from the images shown on the main page. That is then rendered by using an **addEventListener** and triggers the **game()** function that's why there is only **one** parameter of the **playerChoice** because the **computerPlay()** function will randomly execute once the **game()** function is called. 
 
-
+**4.** The last and final section of *main.js* are the **Event Listeners** methods that carries a function with the first parameter as the keyword *click* and second parameter as a empty function (in this case, I made it into an *arrow* function to keep it short and simple) that has within its code block of the 3 different image choices avaiable on the main page. The last event listener is a simple method that reloads the page. 
 
 #### Deployment
 

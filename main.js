@@ -74,8 +74,10 @@ function game(playerChoice) {
     let player = playerChoice;
     let computer = computerPlay();
 
+    // Plays one a round game
     playRound(player, computer);
 
+    // Evaluates scores to see who made it to 5
     if (playerScore == 5) {
         document.getElementById('computer-play-result').innerHTML = "WINNER WINNER CHICKEN DINNER!!!";
         document.getElementById('computer-play-result').style.color = "green";
